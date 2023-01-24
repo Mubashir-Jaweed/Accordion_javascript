@@ -1,0 +1,78 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;1,100;1,200;1,300&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background: #fff;
+    color: #2e2e2e;
+    margin: 0;
+    font-size: 16px;
+    font-family: "Poppins", sans-serif;
+    min-height: 100vh;
+    color: #2e2e2e;
+}
+
+.container {
+    width: 960px;
+    max-width: 100%;
+    margin: 0 auto;
+    padding: 30px 30px 60px 30px;
+    text-align: left;
+}
+
+.accordion-item {
+    width: 100%;
+    margin: 0 0 20px 0;
+    padding: 0;
+    display: block;
+    background-color: #fff;
+    box-shadow: 0 2px 20px rgb(0 0 0 / 12%);
+    border-radius: 5px;
+}
+
+.accordion-title {
+    display: block;
+    position: relative;
+    font-size: 1.5rem;
+    font-weight: bold;
+    text-decoration: none;
+    padding: 20px;
+    width: 100%;
+    outline: none;
+    transition: 0.4s;
+    color: #2e2e2e;
+}
+
+.accordion-title:before {
+    content: '\002B';
+    color: #222222;
+    font-weight: 600;
+    margin-left: auto;
+    font-size: 28px;
+    line-height: 1;
+    padding-right: 10px;
+}
+
+.active:before {
+    content: "\2212";
+}
+
+.accordion-content {
+    padding: 0;
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.2s ease-out;
+}
+
+.accordion-content-inside {
+    padding: 20px;
+}
+
+.accordion-content-inside p {
+    margin-bottom: 20px;
+    font-size: 18px;
+}
